@@ -1,0 +1,35 @@
+{
+    "name": "websafe/dap-reseller-users-info",
+    "description": "DirectAdmin Reseller level plugin for showing user details. Directadmin is a registered trademark of JBMC Software.",
+    "version": "0.0.1",
+    "type": "project",
+    "keywords": [
+        "DirectAdmin", "plugin", "reseller", "user", "info", "config"
+    ],
+    "homepage": "https://github.com/websafe/dap-reseller-users-info/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Szteliga",
+            "email": "ts@websafe.pl",
+            "homepage": "https://websafe.pl/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "ts@websafe.pl",
+        "issues": "https://github.com/websafe/dap-reseller-users-info/issues/",
+        "source": "https://github.com/websafe/dap-reseller-users-info/releases/",
+        "docs": "https://github.com/websafe/dap-reseller-users-info/blob/master/README.md"
+    },
+    "require": {
+        "zendframework/zend-config": "^2.5",
+        "zendframework/zend-uri": "^2.5",
+        "zendframework/zend-http": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Websafe\\": "lib/Websafe"
+        }
+    }
+}
