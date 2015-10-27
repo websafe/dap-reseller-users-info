@@ -1,14 +1,13 @@
 #!/bin/sh
 
-echo "Plugin Installed!"; #NOT! :)
+echo "Plugin Installed!"
 
-cd $DOCUMENT_ROOT; //this directory
+cd $DOCUMENT_ROOT # this directory
 cd ..
-for dir in user reseller admin; do
-{
-        chmod 755 $dir/*
-        chown diradmin:diradmin $dir/*
-}
-done;
+for dir in user reseller admin;
+do
+    chmod 755 $dir/*
+    chown diradmin:diradmin $dir/*
+done
 
-exit 0;
+exit 0

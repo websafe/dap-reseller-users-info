@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Plugin has been updated!"; #NOT! :)
+echo "Plugin has been updated!"
 
-exit 0;
+exit 0

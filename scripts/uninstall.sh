@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Plugin Un-Installed!"; #NOT! :)
+echo "Plugin Un-Installed!"
 
-exit 0;
+exit 0
