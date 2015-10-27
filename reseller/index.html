@@ -1,0 +1,16 @@
+#!/usr/local/bin/php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Websafe\DirectAdmin\Plugins\ResellerUsersInfo\Plugin;
+
+/* */
+$plugin     = new Plugin();
+$users      = $plugin->getUsers();
+$usersArray = array();
+foreach ($users as $user) {
+    $usersArray[$user] = $plugin->getUserConfig($user);
+}
+
+print_r($usersArray);
