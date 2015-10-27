@@ -16,4 +16,8 @@ vendor/bin/composer.php update
 
 
 ----
-Directadmin is a registered trademark of JBMC Software.
+[Directadmin] is a registered trademark of [JBMC Software].
+
+
+[DirectAdmin]: http://www.directadmin.com/
+[JBMC Software]: http://www.jbmc-software.com/
