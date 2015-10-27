@@ -136,7 +136,7 @@ class Plugin
         }
     }
     /**
-     * Retrive user's configuration
+     * Retrieve user's configuration
      * 
      * @param string $user
      * @return array
