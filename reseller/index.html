@@ -13,4 +13,24 @@ foreach ($users as $user) {
     $usersArray[$user] = $plugin->getUserConfig($user);
 }
 
-print_r($usersArray);
+//print_r($usersArray);
+?>
+
+<table class="list table-highlight"  cellpadding="3" cellspacing="1">
+    <tr>
+        <td class="listtitle">User</td>
+        <td class="listtitle">E-mail</td>
+        <td class="listtitle" align="right">Created</td>
+    </tr> 
+    
+<?php foreach ($usersArray as $user => $userConfig): ?>
+
+    <tr>
+        <td class="list"><a href="/CMD_SHOW_USER?user=<?php echo $user;?>"><?php echo $user;?></a></td>
+        <td class="list"><a href="mailto:<?php echo $userConfig['email'];?>"><?php echo $userConfig['email'];?></a></td>
+        <td class="list"><?php echo date('Y-m-d  H.i', strtotime($userConfig['date_created']));?></td>
+    </tr>
+
+<?php endforeach;?>
+
+</table>
